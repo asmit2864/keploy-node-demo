@@ -7,10 +7,11 @@ app.get("/sum", (req, res) => {
   const b = Number(req.query.b);
 
   res.json({
-    result: a + b
+    result: a - b
   });
 });
 
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
+
